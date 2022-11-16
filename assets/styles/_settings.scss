@@ -10,17 +10,31 @@
   font-family: "roboto";
   src: url(../fonts/Roboto-Light.ttf);
 }
+$font1: allura, serif;
+$font2: poppins, serif;
+$font3: roboto, sans-serif;
+$color1: rgb(14, 14, 14);
+$color2: rgb(177, 85, 0);
+$color3: rgb(240, 240, 240);
+@mixin titleAllura {
+  font-family: $font1;
+  font-size: 3.8rem;
+  color: $color2;
+}
+@mixin titlePoppins {
+  font-family: $font2;
+  font-size: 3rem;
+  color: $color1;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   min-height: 600vh;
-}/*# sourceMappingURL=index.css.map */
+}
