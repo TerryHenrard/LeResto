@@ -16,12 +16,12 @@ $font3: roboto, sans-serif;
 $color1: rgb(14, 14, 14);
 $color2: rgb(177, 85, 0);
 $color3: rgb(240, 240, 240);
-@mixin titleAllura {
+@mixin title1 {
   font-family: $font1;
   font-size: 3.8rem;
   color: $color2;
 }
-@mixin titlePoppins {
+@mixin title2 {
   font-family: $font2;
   font-size: 3rem;
   color: $color1;

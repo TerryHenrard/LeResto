@@ -23,4 +23,93 @@ html {
 
 body {
   min-height: 600vh;
+}
+
+header {
+  background: url(../images/bg-slider-06.jpg) center/cover;
+  height: 100vh;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 80px;
+  color: rgb(240, 240, 240);
+}
+header nav p {
+  font-family: allura, serif;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+header nav .menu {
+  width: 55%;
+  height: 100%;
+}
+header nav .menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: roboto, sans-serif;
+  font-size: 0.9rem;
+}
+header nav .menu ul:hover li:not(:hover) {
+  filter: blur(1px);
+  transform: scale(0.99);
+}
+header nav .menu ul li {
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+  transition: 1s;
+}
+header nav .menu ul li:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background: rgb(240, 240, 240);
+  opacity: 0;
+  -webkit-animation: underlineMenu 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+          animation: underlineMenu 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+@-webkit-keyframes underlineMenu {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 0.8;
+  }
+}
+@keyframes underlineMenu {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 0.8;
+  }
+}
+header nav .menu-network {
+  width: 10%;
+}
+header nav .menu-network ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+}
+header nav .menu-network ul:hover li:not(:hover) {
+  filter: blur(1px);
+  transform: scale(0.99);
+}
+header nav .menu-network ul li {
+  transition: 1s;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
