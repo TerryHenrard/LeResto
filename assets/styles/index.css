@@ -138,4 +138,8 @@ header .title p {
   color: white;
   letter-spacing: 8px;
   text-transform: uppercase;
+}
+
+.section1 {
+  border: 0.1px solid red;
 }/*# sourceMappingURL=index.css.map */
