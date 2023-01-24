@@ -14,7 +14,7 @@ $font1: allura, serif;
 $font2: poppins, serif;
 $font3: roboto, sans-serif;
 $color1: rgb(14, 14, 14);
-$color2: rgb(255, 180, 67);
+$color2: rgb(170, 102, 0);
 $color3: rgb(240, 240, 240);
 @mixin title1 {
   font-family: $font1;
@@ -37,4 +37,5 @@ html {
 }
 body {
   min-height: 600vh;
+  background: rgb(41, 41, 41);
 }

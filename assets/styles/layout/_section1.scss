@@ -1,3 +1,56 @@
 .section1 {
-  border: 0.1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  height: 60vh;
+  overflow: hidden;
+  .s1-left-part {
+    width: 50%;
+    height: 58vh;
+    border: 1px dashed $color2;
+    margin: 10px;
+    text-align: center;
+    p:first-child {
+      color: $color2;
+      font-family: $font1;
+      font-size: 2.3rem;
+      margin-top: 50px;
+      span {
+        color: black;
+        font-family: $font2;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+      }
+    }
+    img {
+      margin: 25px 0;
+    }
+    .s1-lp-txt {
+      font-family: $font3;
+      font-size: 1.2rem;
+      padding: 0 10px;
+      margin: 0 0 25px 0;
+    }
+  }
+  .s2-lp-img-russel-stephens {
+    img {
+      height: 90px;
+      border-radius: 50%;
+      box-shadow: 0 0 2px 0;
+    }
+    :nth-child(2) {
+      font-family: $font2;
+    }
+    :last-child {
+      font-family: $font3;
+      color: rgb(197, 197, 197);
+    }
+  }
+  .s1-right-part {
+    background: url(../images/store-01.jpg) center/cover;
+    width: 50%;
+    height: 60vh;
+  }
 }

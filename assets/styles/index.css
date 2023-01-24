@@ -23,6 +23,7 @@ html {
 
 body {
   min-height: 600vh;
+  background: rgb(41, 41, 41);
 }
 
 header {
@@ -117,12 +118,12 @@ header .title {
 }
 header .title h1 {
   font-family: allura, serif;
-  color: rgb(255, 180, 67);
+  color: rgb(170, 102, 0);
   font-weight: 200;
   font-size: 3.5rem;
 }
 header .title h1 span {
-  font-family: roboto, sans-serif;
+  font-family: poppins, serif;
   text-transform: uppercase;
   font-size: 4rem;
   font-weight: 900;
@@ -141,5 +142,56 @@ header .title p {
 }
 
 .section1 {
-  border: 0.1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  height: 60vh;
+  overflow: hidden;
+}
+.section1 .s1-left-part {
+  width: 50%;
+  height: 58vh;
+  border: 1px dashed rgb(170, 102, 0);
+  margin: 10px;
+  text-align: center;
+}
+.section1 .s1-left-part p:first-child {
+  color: rgb(170, 102, 0);
+  font-family: allura, serif;
+  font-size: 2.3rem;
+  margin-top: 50px;
+}
+.section1 .s1-left-part p:first-child span {
+  color: black;
+  font-family: poppins, serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.section1 .s1-left-part img {
+  margin: 25px 0;
+}
+.section1 .s1-left-part .s1-lp-txt {
+  font-family: roboto, sans-serif;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  margin: 0 0 25px 0;
+}
+.section1 .s2-lp-img-russel-stephens img {
+  height: 90px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 0;
+}
+.section1 .s2-lp-img-russel-stephens :nth-child(2) {
+  font-family: poppins, serif;
+}
+.section1 .s2-lp-img-russel-stephens :last-child {
+  font-family: roboto, sans-serif;
+  color: rgb(197, 197, 197);
+}
+.section1 .s1-right-part {
+  background: url(../images/store-01.jpg) center/cover;
+  width: 50%;
+  height: 60vh;
 }/*# sourceMappingURL=index.css.map */
