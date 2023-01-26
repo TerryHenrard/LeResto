@@ -1,6 +1,9 @@
 .section2 {
   .s2-top-part {
+    position: relative;
+    z-index: 1;
     text-align: center;
+    height: 50vh;
     p {
       font-family: $font1;
       color: $color2;
@@ -16,7 +19,7 @@
       justify-content: center;
       li {
         position: relative;
-        margin: 50px 80px 20px 80px;
+        margin: 50px 50px 20px 50px;
         font-family: $font3;
         font-size: 1.3rem;
         cursor: pointer;
@@ -29,6 +32,63 @@
           height: 1px;
           width: 100%;
           top: 80%;
+        }
+      }
+    }
+  }
+  .s2-bottom-part {
+    position: relative;
+    z-index: 1;
+    height: 75vh;
+    background: url("../images/bg-menu-01.jpg") center/cover;
+
+    .s2-bp-container {
+      position: absolute;
+      z-index: 2;
+      left: 50%;
+      top: 30%;
+      transform: translate(-50%, -50%);
+      background: white;
+      height: 75vh;
+      width: 60%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+
+      .meal {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px dashed $color3;
+        margin: 0 20px 5px 0;
+
+        img {
+          width: 25%;
+          border-radius: 50%;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: start;
+
+          :first-child {
+            font-family: $font3;
+            font-weight: bolder;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+          }
+
+          :last-child {
+            font-family: $font3;
+          }
+        }
+
+        :nth-child(3) {
+          font-family: $font3;
+          font-weight: bold;
+          color: $color2;
         }
       }
     }
