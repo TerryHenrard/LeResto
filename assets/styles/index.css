@@ -278,4 +278,75 @@ header .title p {
   font-family: roboto, sans-serif;
   font-weight: bold;
   color: rgb(170, 102, 0);
+}
+
+.section3 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section3 .s3-container {
+  height: 75vh;
+  width: 85%;
+  display: flex;
+  background: black;
+}
+.section3 .s3-container .s3-left-part {
+  box-sizing: border-box;
+  margin: 30px;
+  width: 22%;
+  border: 1px dashed rgb(224, 224, 224);
+  background: rgb(14, 14, 14);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.section3 .s3-container .s3-left-part div:not(:last-child) {
+  text-align: center;
+  height: 20%;
+}
+.section3 .s3-container .s3-left-part .s3-lp-title p {
+  font-family: allura, serif;
+  font-size: 3rem;
+  color: rgb(170, 102, 0);
+}
+.section3 .s3-container .s3-left-part .s3-lp-title p span {
+  font-family: poppins, serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(224, 224, 224);
+}
+.section3 .s3-container .s3-left-part img {
+  height: 40px;
+}
+.section3 .s3-container .s3-left-part .s3-lp-hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section3 .s3-container .s3-left-part .s3-lp-hours :first-child {
+  font-family: poppins, serif;
+  text-transform: uppercase;
+  color: rgb(170, 102, 0);
+  font-size: 1.5rem;
+}
+.section3 .s3-container .s3-left-part .s3-lp-hours :nth-child(2),
+.section3 .s3-container .s3-left-part .s3-lp-hours :last-child {
+  font-family: roboto, sans-serif;
+  color: rgb(224, 224, 224);
+  font-size: 1.2rem;
+}
+.section3 .s3-container .s3-left-part .s3-lp-num {
+  margin: 0 0 30px 0;
+  font-family: poppins, serif;
+  color: rgb(170, 102, 0);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.section3 .s3-container .s3-right-part {
+  width: 78%;
+  background: white;
 }/*# sourceMappingURL=index.css.map */
