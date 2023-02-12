@@ -15,7 +15,7 @@
       color: $color2;
       font-family: $font1;
       font-size: 2.3rem;
-      margin-top: 50px;
+      margin-top: 25px;
       span {
         color: black;
         font-family: $font2;
@@ -25,13 +25,15 @@
       }
     }
     img {
-      margin: 25px 0;
+      margin: 15px 0;
     }
     .s1-lp-txt {
       font-family: $font3;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       padding: 0 10px;
-      margin: 0 0 25px 0;
+      height: 25%;
+      display: flex;
+      align-items: center;
     }
   }
   .s2-lp-img-russel-stephens {
