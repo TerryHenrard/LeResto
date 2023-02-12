@@ -1,0 +1,174 @@
+.section4 {
+  height: 80vh;
+  .s4-title {
+    text-align: center;
+
+    p {
+      font-family: $font1;
+      font-size: 3rem;
+      color: $color2;
+
+      span {
+        font-family: $font2;
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+
+    img {
+      height: 40px;
+    }
+  }
+
+  .s4-container {
+    width: 80%;
+    height: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "e1 e1 e3"
+      "e2 e2 e3";
+
+    .s4-event1,
+    .s4-event2 {
+      grid-area: e1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 15px;
+
+      .s4-e1-lp,
+      .s4-e2-lp {
+        background: url(../images/event-01.jpg) center/cover;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          background: rgb(44, 44, 44);
+          color: #fff;
+          width: 40%;
+          padding: 30px;
+          text-align: center;
+          font-family: $font3;
+          font-size: 1.1rem;
+
+          span {
+            font-size: 1.7rem;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .s4-e1-rp,
+      .s4-e2-rp {
+        background: #fff;
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+
+        p {
+          padding: 25px;
+        }
+
+        :first-child {
+          font-size: 1.5rem;
+          font-family: $font3;
+          letter-spacing: 3px;
+        }
+
+        :nth-child(2) {
+          color: $color3;
+          font-family: $font3;
+          font-weight: lighter;
+          letter-spacing: 4px;
+        }
+
+        :last-child {
+          font-size: 1.2rem;
+          font-family: $font2;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .s4-event2 {
+      grid-area: e2;
+
+      .s4-e2-lp {
+        background: url("../images/event-02.jpg") center/cover;
+      }
+    }
+
+    .s4-event3 {
+      grid-area: e3;
+      padding: 15px;
+
+      .s4-e3-behind-part {
+        width: 100%;
+        height: 100%;
+        background: url("../images/event-03.jpg") center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .s4-e3-ahead-part {
+          background: #fff;
+          height: 90%;
+          width: 85%;
+
+          :first-child {
+            background: rgb(44, 44, 44);
+            color: #fff;
+            width: 30%;
+            padding: 15px 15px 25px 15px;
+            margin: 0 auto;
+            text-align: center;
+            font-family: $font3;
+            font-size: 1.1rem;
+
+            span {
+              font-size: 1.7rem;
+              font-weight: bold;
+            }
+          }
+
+          :nth-child(2) {
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: $font3;
+            letter-spacing: 3px;
+            margin: 40px 0;
+          }
+
+          :nth-child(3) {
+            color: $color3;
+            font-family: $font3;
+            font-weight: lighter;
+            letter-spacing: 4px;
+            text-align: center;
+          }
+
+          :last-child {
+            font-size: 1.2rem;
+            font-family: $font2;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin: 100px 0 0 0;
+            text-align: center;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
