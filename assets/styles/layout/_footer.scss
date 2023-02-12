@@ -1,0 +1,62 @@
+footer {
+  height: 35vh;
+  display: flex;
+
+  .left-part {
+    width: 50%;
+    background: $color1;
+    color: white;
+
+    :first-child {
+      color: $color2;
+      font-family: $font1;
+      font-size: 3rem;
+      margin: 50px 0 0 200px;
+    }
+
+    :last-child {
+      font-family: $font3;
+      line-height: 40px;
+      margin: 20px 30px 0 200px;
+    }
+  }
+
+  .right-part {
+    width: 50%;
+
+    .f-p {
+      text-transform: uppercase;
+      font-family: $font2;
+      margin: 50px 0 0 40px;
+      color: #fff;
+      font-size: 1.1rem;
+    }
+
+    .f-i-e {
+      background: none;
+      border: 1px solid $color2;
+      padding: 10px 50px 10px 10px;
+      margin: 10px 0 0 40px;
+      color: #fff;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .f-social-n {
+      margin: 50px 0 0 0;
+      font-family: $font3;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bolder;
+      margin: 100px 0 0 40px;
+
+      i {
+        color: $color3;
+        margin: 0 0 0 30px;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -13,7 +13,7 @@
 $font1: allura, serif;
 $font2: poppins, serif;
 $font3: roboto, sans-serif;
-$color1: rgb(14, 14, 14);
+$color1: rgb(22, 22, 22);
 $color2: rgb(170, 102, 0);
 $color3: rgb(224, 224, 224);
 @mixin title1 {
@@ -36,6 +36,5 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  min-height: 600vh;
   background: rgb(41, 41, 41);
 }

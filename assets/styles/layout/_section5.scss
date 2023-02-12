@@ -1,0 +1,53 @@
+.section5 {
+  position: relative;
+  height: 100vh;
+
+  .s5-top-part {
+    height: 50%;
+  }
+
+  .s5-mid-part {
+    position: absolute;
+    height: 45%;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background: #fff;
+    text-align: center;
+
+    img {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      margin: 0 0 30px 0;
+    }
+
+    :nth-child(2) {
+      font-family: $font3;
+      width: 90%;
+      margin: 0 auto;
+      line-height: 30px;
+      font-size: 1.2rem;
+    }
+
+    :nth-child(3) {
+      font-size: 2rem;
+      font-family: $font3;
+      margin: 70px 0 0 0;
+    }
+
+    :last-child {
+      color: $color2;
+      font-size: 1.5rem;
+      margin: 30px 0 0 0;
+      font-family: $font3;
+    }
+  }
+
+  .s5-bot-part {
+    height: 50%;
+    background: url("../images/gmap.jpg") center/cover;
+  }
+}
